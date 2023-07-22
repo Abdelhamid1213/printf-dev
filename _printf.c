@@ -5,7 +5,7 @@
  *
  * @format: controls the output
  *
- * Return: lenght of string printed
+ * Return: length of string printed
  */
 
 int _printf(const char *format, ...)
