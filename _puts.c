@@ -6,12 +6,12 @@
  * @str: string to get printed
  */
 
-void _puts(char *str)
+int _puts(char *str)
 {
 	while (*str != '\0')
 	{
 		write(1, str, 1);
 		str++;
 	}
-	write(1, "\n", 1);
+	return (write(1, "\n", 1));
 }
