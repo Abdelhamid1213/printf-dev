@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * handler - ..
+ * @format: ..
+ * @flags: ..
+ * @args: ..
+ * Return: ..
+ */
+
 int handler(const char *format, flag_t flags[], va_list args)
 {
 	int i, j, r_val, output;
