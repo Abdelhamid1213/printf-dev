@@ -7,7 +7,9 @@
 #include <stdlib.h>
 
 /**
- * flag - ..
+ * struct flag - ..
+ * @s: ..
+ * @f: ..
  */
 
 struct flag

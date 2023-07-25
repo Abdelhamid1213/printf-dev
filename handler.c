@@ -48,6 +48,6 @@ int handler(const char *format, flag_t flags[], va_list args)
 			output++;
 		}
 	}
-    _putchar(-1);
+	_putchar(-1);
 	return (output);
 }
