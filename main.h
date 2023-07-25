@@ -34,7 +34,6 @@ int print_heX(va_list list);
 int hex_check(int, char);
 int print_pointer(va_list list);
 int print_bigS(va_list list);
-void flush_buffer();
 char *convert(unsigned long int num, int base, int lowercase);
 int handler(const char *format, flag_t flags[], va_list args);
 

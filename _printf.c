@@ -37,8 +37,6 @@ int _printf(const char *format, ...)
 	va_start(args, format);
 	output = handler(format, flags, args);
 	va_end(args);
-
-	flush_buffer();
-
+	_putchar(-1);
 	return (output);
 }
