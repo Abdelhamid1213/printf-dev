@@ -5,9 +5,10 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
-#define MAX_BUFFER 1024
-extern char buffer[MAX_BUFFER]; 
-extern int buff_idx;
+
+/**
+ * flag - ..
+ */
 
 struct flag
 {
