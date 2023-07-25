@@ -1,5 +1,8 @@
 #include "main.h"
 
+char buffer[MAX_BUFFER];
+int buff_idx = 0;
+
 /**
  * _putchar - writes the character c to stdout
  * @c: The character to print
@@ -8,9 +11,21 @@
  * On error, -1 is returned, and errno is set appropriately.
  */
 
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
+int _putchar(char c) {
+  buffer[buff_idx++] = c; 
+  if(buff_idx == MAX_BUFFER) {
+    flush_buffer();
+  }
+  return 0;
+}
+
+/**
+ * flush_buffer - ..
+ */
+
+void flush_buffer() {
+  write(1, buffer, buff_idx);
+  buff_idx = 0;
 }
 
 /**

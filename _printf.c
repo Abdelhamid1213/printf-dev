@@ -38,5 +38,7 @@ int _printf(const char *format, ...)
 	output = handler(format, flags, args);
 	va_end(args);
 
+	flush_buffer();
+
 	return (output);
 }

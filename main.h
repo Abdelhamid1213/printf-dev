@@ -5,7 +5,9 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
-
+#define MAX_BUFFER 1024
+extern char buffer[MAX_BUFFER]; 
+extern int buff_idx;
 
 struct flag
 {
@@ -31,8 +33,9 @@ int print_hex(va_list list);
 int print_heX(va_list list);
 int hex_check(int, char);
 int print_pointer(va_list list);
-char *convert(unsigned long int num, int base, int lowercase);
 int print_bigS(va_list list);
+void flush_buffer();
+char *convert(unsigned long int num, int base, int lowercase);
 int handler(const char *format, flag_t flags[], va_list args);
 
 unsigned int base_len(unsigned int, int);
